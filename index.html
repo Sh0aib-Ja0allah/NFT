@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      color: aliceblue;
+    }
+    .Home{
+      background-color: hsl(228, 54%, 13%);
+      padding: 55px;
+      /* display: flex;
+      flex-direction: row; */
+    }
+    .Child{
+      background-color: #21215f;
+      display: flex;
+      margin: auto;
+      vertical-align: middle;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: fit-content;
+      width: 300px;
+      border-radius: 15px;
+      padding: 25px;
+    }
+    .nft{
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .EQ{
+      font-size: 20px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .description{
+      color: #8BACD9;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #8BACD9;
+    }
+    .SubChild{
+      margin-bottom: 20px;
+    }
+    .time{
+      color: #8BACD9;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .num{
+      color: #00FFF8;
+    }
+    .img{
+      margin-right: 5px;
+    }
+    .image-avatar{
+      width: 30px;
+      height: 30px;
+      border: 1px solid wheat;
+      border-radius: 30px;
+    }
+    span{
+      color: darkgray;
+    }
+    .end{
+      display: flex;
+      flex-direction: row;
+      font-size: large;
+      /* letter-spacing: 1px; */
+    }
+    .text{
+      padding: 6px 0;
+      /* text-align: center; */
+    }
+  </style>
+</head>
+<body class="Home">
+  <div class="Child">
+    <div class="SubChild image">
+      <img src="./images/image-equilibrium.jpg" alt="" class="nft">
+    </div>
+    <div class="EQ SubChild">
+      Equilibrium #3429
+    </div>
+    <div class="description SubChild">
+      Our Equilibrium collection promotes balance and calm.
+    </div>
+    <div class="row SubChild">
+      <div class="num">
+        <img class="img" src="./images/icon-ethereum.svg" alt="" />0.041 ETH
+      </div>
+      <div class="time">
+        <img class="img" src="./images/icon-clock.svg" alt="" />3 days left
+      </div>
+    </div>
+    <div class="SubChild end">
+      <img class="img image-avatar" src="./images/image-avatar.png" alt="" /><div class="text"> <span>Creation of</span> Jules Wyvern</div>
+    </div>
+    <!-- <div class="attribution SubChild">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+</div>
+</body>
+</html>
